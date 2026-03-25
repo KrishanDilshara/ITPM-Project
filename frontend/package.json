@@ -1,12 +1,12 @@
 {
   "name": "frontend",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "scripts": {
-    "start": "node scripts/run-react-scripts.js start",
-    "build": "node scripts/run-react-scripts.js build",
-    "test": "node scripts/run-react-scripts.js test",
-    "eject": "node scripts/run-react-scripts.js eject"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +15,11 @@
     "axios": "^1.13.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-scripts": "5.0.1",
     "react-router-dom": "^7.13.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.0",
+    "vite": "^7.1.12"
   },
   "browserslist": {
     "production": [
